@@ -58,12 +58,12 @@ public class BookHandlerTest {
 
   @Test
   public void addBook() {
-    final BookDto movie = new BookDto();
-    movie.setName("STRAIGHT OUTTA COMPTON");
-    movie.setIsbn("AB5690M");
-    movie.setAvailableCopies(10);
+    final var book = new BookDto();
+    book.setName("STRAIGHT OUTTA COMPTON");
+    book.setIsbn("AB5690M");
+    book.setAvailableCopies(10);
 
-    response = handler.addBook(movie);
+    response = handler.addBook(book);
     verify(manager, times(1)).persist(any());
     assertEquals(200, response.getStatus());
   }

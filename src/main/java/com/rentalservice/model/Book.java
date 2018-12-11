@@ -46,7 +46,7 @@ public class Book implements Serializable {
   @Column(name = "isbn", nullable = false)
   private String isbn;
 
-  @NotNull(message = "name cannot be null")
+  @NotNull(message = "available copies cannot be null")
   @Column(name = "available_copies", nullable = false)
   private int availableCopies;
 
