@@ -1,0 +1,5 @@
+.idea/
+target/
+*.iml
+nb-configuration.xml
+atlassian-ide-plugin.xml
